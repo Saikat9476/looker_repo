@@ -27,4 +27,10 @@ view: sample_table {
     type: count
     drill_fields: [id, name]
   }
+
+  measure: max_orders {
+    type: max
+    drill_fields: [id, name]
+  }
+
 }
