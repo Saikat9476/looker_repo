@@ -14,3 +14,5 @@ datagroup: sampleproject_default_datagroup {
 persist_with: sampleproject_default_datagroup
 
 explore: sample_table {}
+
+explore: testing {}
