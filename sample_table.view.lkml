@@ -29,7 +29,8 @@ view: sample_table {
   }
 
   measure: max_orders {
-    type: max
+    type: number
+    sql: MAX(${orders}) ;;
     drill_fields: [id, name]
   }
 
