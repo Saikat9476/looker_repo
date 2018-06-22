@@ -34,4 +34,9 @@ view: sample_table {
     drill_fields: [id, name]
   }
 
+  measure: min_orders {
+    type: number
+    sql: MIN(${orders}) ;;
+    drill_fields: [id, name]
+  }
 }
