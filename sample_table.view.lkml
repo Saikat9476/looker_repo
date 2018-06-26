@@ -39,4 +39,11 @@ view: sample_table {
     sql: MIN(${orders}) ;;
     drill_fields: [id, name]
   }
+
+  measure: total_orders {
+    type: sum
+    sql: ${orders} ;;
+    drill_fields: [id, name]
+  }
+
 }
